@@ -1,5 +1,5 @@
 // Element UI Table attributes
-export let ElementUITableProps = {
+export let elTableProps = {
   size: String,
 
   height: [String, Number],
@@ -91,7 +91,7 @@ export let ElementUITableProps = {
 };
 
 // Element UI Pagination attributes
-export let ElementUIPaginationProps = {
+export let elPaginationProps = {
   pageSize: {
     type: Number,
     default: 10

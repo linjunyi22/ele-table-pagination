@@ -1,6 +1,7 @@
 <template>
   <div>
     <el-table
+      ref="table"
       v-loading="tableLoading"
       :element-loading-text="loadingText"
       :data="tableData"
@@ -85,13 +86,15 @@
 </template>
 
 <script>
-import { ElementUITableProps, ElementUIPaginationProps } from "./props";
+import { elTableProps, elPaginationProps } from "./props";
+import { elTableMethods } from "./mixins/index.js";
 
 export default {
   name: "EleTablePagination",
+  mixins: [elTableMethods("table")],
   props: {
-    ...ElementUITableProps,
-    ...ElementUIPaginationProps,
+    ...elTableProps,
+    ...elPaginationProps,
 
     // custom attribute
     // 分页组件的位置，可选值：left,right,center
