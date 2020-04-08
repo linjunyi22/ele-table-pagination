@@ -74,31 +74,31 @@ Vue.use(EleTablePagination)
 
 
 <script>
-	export default {
-  	methods: {
-      // 必填的 queryMethod,返回 promise 对象
-      // 回调参数 { currentPage, pageSize }
-      async queryMethod({ currentPage, pageSize }) {
-        // requests or something handle ...
-        return {
-          tableData: [
-            {
-              foo: "foo1",
-              bar: "bar1"
-            },
-            {
-              foo: "foo2",
-              bar: "bar2"
-            }
-          ],
-          dataCount: 10
-        };
-      },
-      refreshTable(){
-        this.refs.table.refreshQueryMethod()
-      }
+export default {
+  methods: {
+    // 必填的 queryMethod,返回 promise 对象
+    // 回调参数 { currentPage, pageSize }
+    async queryMethod({ currentPage, pageSize }) {
+      // requests or something handle ...
+      return {
+        tableData: [
+          {
+            foo: "foo1",
+            bar: "bar1"
+          },
+          {
+            foo: "foo2",
+            bar: "bar2"
+          }
+        ],
+        dataCount: 10
+      };
+    },
+    refreshTable() {
+      this.refs.table.refreshQueryMethod();
     }
-  };
+  }
+};
 </script>
 ```
 
