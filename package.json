@@ -1,0 +1,29 @@
+{
+  "name": "ele-table-pagination",
+  "version": "0.1.0",
+  "private": false,
+  "description": "element-ui table pagination 二次封装",
+  "main": "lib/ele-table-pagination.umd.js",
+  "keyword": "Element-UI,Table,Pagination",
+  "author": "https://github.com/linjunyi22",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name ele-table-pagination --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "element-ui": "^2.13.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
