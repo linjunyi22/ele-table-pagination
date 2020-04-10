@@ -24,7 +24,7 @@ $ npm i --save ele-table-pagination
 | auto-load | 是否默认加载数据，若为 true 则调用 query-method 中的方法 | boolean | true,false |true|
 | pagination-position | 分页栏布局位置 | string | left,center,right |center|
 | loading-text | loading 动画的文本内容 | string | - |正在加载中|
-| query-method | **必填**，表格回调函数，回调函数需要返回一个 固定数据格式的 Promise 对象 | function | - |async ({ currentPage, pageSize }) => { return { tableData: [], dataCount: 0 };}|
+| query-method | **必填**，表格回调函数，回调函数需要返回一个 固定数据格式的 Promise 对象，tableData：表格数据，dataCount：数据总数 | function | - |async ({ currentPage, pageSize }) => { return { tableData: [], dataCount: 0 };}|
 
 
 
